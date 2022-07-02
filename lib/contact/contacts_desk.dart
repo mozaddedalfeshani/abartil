@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ContatsPage extends StatefulWidget {
-  ContatsPage({Key? key}) : super(key: key);
+  const ContatsPage({Key? key}) : super(key: key);
 
   @override
   State<ContatsPage> createState() => _ContatsPageState();
@@ -12,65 +12,20 @@ class _ContatsPageState extends State<ContatsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Contacts"),
+        title: const Text("Contacts"),
       ),
       body: ListView(
-        
         children: [
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
-          Text("Hello"),
+          for (int i = 1; i <= 10; i++) ...[
+            Card(
+              child: ListTile(
+                title: Text("Samin yeasar sohag no: $i"),
+                subtitle: const Text("0171500000"),
+                leading: const Icon(Icons.person),
+                trailing: const Icon(Icons.call),
+              ),
+            ),
+          ],
         ],
       ),
     );

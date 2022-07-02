@@ -1,5 +1,4 @@
 import 'package:abartil/contact/contacts_desk.dart';
-import 'package:abartil/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatefulWidget {
@@ -23,7 +22,7 @@ class _MyAppState extends State<MyApp> {
         colorSchemeSeed: Colors.green,
         brightness: Brightness.dark,
       ),
-      home: ContatsPage(),
+      home: const ContatsPage(),
     );
   }
 }
